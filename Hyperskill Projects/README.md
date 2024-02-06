@@ -12,7 +12,7 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 
 </br>
 
-## Java Projects <span id="java-projects"></span>
+## Java Projects
 <details>
   <summary><strong>1. Coffee Machine Simulator with Java</strong></summary>
 
@@ -127,7 +127,7 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 
 </br>
 
-## Python Projects <span id="python-projects"></span>
+## Python Projects
 <details>
   <summary><strong>1. Coffee Machine Simulator with Java</strong></summary>
 
@@ -256,7 +256,7 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 
 </br>
 
-## JavaScript Projects <span id="javascript-projects"></span>
+## JavaScript Projects
 <details>
   <summary><strong>1. Coffee Machine (JavaScript)</strong></summary>
 
@@ -313,7 +313,7 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 
 </br>
 
-## SQL Projects <span id="sql-projects"></span>
+## SQL Projects
 <details>
   <summary><strong>1. Electronics Store Customer</strong></summary>
 
@@ -339,7 +339,7 @@ Everything goes digital these days, and so does money. Today, most people have c
 </details>
 </br>
 
-## Go Projects <span id="go-projects"></span>
+## Go Projects
 <details>
   <summary><strong>1. Coffee Machine (Go)</strong></summary>
 
