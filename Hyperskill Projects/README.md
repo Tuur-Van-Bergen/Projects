@@ -96,33 +96,21 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 </details>
 
 <details>
-  <summary><strong>14. Dolly</strong></summary>
-
-  In 1996 The Roslin Institute from Scotland cloned a sheep called Dolly. A big step in the history of humankind. You don't need to clone a sheep in this project, don't worry. Instead of Dolly, clone a remote repository. A clone is a copy of a repository, created in a new directory. The aim is usually to make a local copy of a remote repository that is hosted on a third-party service. After this, you can work on your local copy, make changes, and push the changes back.
-</details>
-
-<details>
-  <summary><strong>15. Readability Score (Java)</strong></summary>
+  <summary><strong>14. Readability Score (Java)</strong></summary>
 
   Everyone has their own personal reading history, and as we grow up, we are able to comprehend more and more complicated texts. But how do you estimate the level of difficulty of a given text, and how do you teach a computer to do that? In this project, you will find it out: write a program that determines how difficult the text is and for which age it is most suitable.
 </details>
 
 <details>
-  <summary><strong>16. Contacts (Java)</strong></summary>
+  <summary><strong>15. Contacts (Java)</strong></summary>
 
   You will learn the essential basics of object-oriented programming: encapsulation, inheritance, and polymorphism. Inheritance will allow you to write code that can perform the same process but for different objects. Polymorphism helps to initiate different processes for different objects by using the same method. You’ll also learn to prevent other users of your code from modifying the variables using encapsulation.
 </details>
 
 <details>
-  <summary><strong>17. Blockchain with Java</strong></summary>
+  <summary><strong>16. Blockchain with Java</strong></summary>
 
   Blockchains are data structures where blocks are inseparably connected. What makes blockchains so special is the security level they offer due to the way they are constructed. Blockchains are unhackable, so it makes perfect sense why cryptocurrency makes use of this technology. In this project, you will try yourself at making a microcosm where virtual miners earn cryptocurrency and exchange messages and transactions using blockchain. As difficult as the project might be, it is bound to pay off: not in cryptocurrency, but in knowledge and skills.
-</details>
-
-<details>
-  <summary><strong>18. Phone Book with Java</strong></summary>
-
-  You suddenly remember you need to call your aunt and wish her a happy birthday, but how do you find her number quickly in a giant phonebook? Write a program that will solve this problem once and forever: create a phonebook where you can easily, quickly and efficiently find necessary information. Names and numbers, here we come.
 </details>
 
 </br>
