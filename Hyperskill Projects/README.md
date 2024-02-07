@@ -14,7 +14,7 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 
 ## Java Projects
 <details>
-  <summary><strong>1. Coffee Machine Simulator with Java</strong></summary>
+  <summary><strong>1. Coffee Machine Simulator</strong></summary>
 
   What can be better than a cup of coffee during a break? A coffee that you don’t have to make yourself. It’s enough to press a couple of buttons on the machine and you get a cup of energy; but first, we should teach the machine how to do it.
   
@@ -24,7 +24,7 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 </details>
 
 <details>
-  <summary><strong>2. Simple Tic-Tac-Toe (Java)</strong></summary>
+  <summary><strong>2. Simple Tic-Tac-Toe</strong></summary>
 
   Everybody remembers this paper-and-pencil game from childhood: Tic-Tac-Toe, also known as Noughts and crosses or Xs and Os. A single mistake usually costs you the game, but thankfully it is simple enough that most players discover the best strategy quickly. Let’s program Tic-Tac-Toe and get playing!
 </details>
@@ -36,13 +36,13 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 </details>
 
 <details>
-  <summary><strong>4. Simple Chat Bot with Java</strong></summary>
+  <summary><strong>4. Simple Chat Bot</strong></summary>
 
   Begin grasping coding fundamentals by creating a simple console chat bot from scratch. This bot will be able to engage in basic conversation with you and perform simple arithmetic. During this journey, you will play some word and number games that you are going to implement on your own. Pack up and let’s hit the road!
 </details>
 
 <details>
-  <summary><strong>5. Battleship with Java</strong></summary>
+  <summary><strong>5. Battleship</strong></summary>
 
   Writing games is probably one of the most exciting tasks in programming. While creating your first console game, you will learn about processing user input and handling errors.
 </details>
@@ -60,13 +60,13 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 </details>
 
 <details>
-  <summary><strong>8. Zookeeper with Java</strong></summary>
+  <summary><strong>8. Zookeeper</strong></summary>
 
   Learn the very basics of Java coding by building a simple tool for zookeepers. Get to know how to work with variables, strings and arrays, put them in while loops and develop a simple console app from scratch.
 </details>
 
 <details>
-  <summary><strong>9. Rock-Paper-Scissors (Java)</strong></summary>
+  <summary><strong>9. Rock-Paper-Scissors</strong></summary>
 
   If you’ve ever wanted to create games, this project will get you started! In this project, you will code a Rock-Paper-Scissors-Lizard-Spock game, a more advanced version of Rock-Paper-Scissors and play against the computer.
 </details>
@@ -78,7 +78,7 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 </details>
 
 <details>
-  <summary><strong>11. Minesweeper (Java)</strong></summary>
+  <summary><strong>11. Minesweeper</strong></summary>
 
   You played this game when the Internet cut off, didn’t you? It is time to remember the good old days. In this project, you will create your own "Minesweeper" game.
 </details>
@@ -90,25 +90,25 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 </details>
 
 <details>
-  <summary><strong>13. Number Base Converter (Java)</strong></summary>
+  <summary><strong>13. Number Base Converter</strong></summary>
 
   We’re all quite used to our good old decimal system of numerals. But let’s not forget that there are other ways to count! Whether we need to convert numbers from one system to another just for fun or to store large data more efficiently, a converter proves helpful. In this project, you will create your own tool that will help you convert numbers from one system to another.
 </details>
 
 <details>
-  <summary><strong>14. Readability Score (Java)</strong></summary>
+  <summary><strong>14. Readability Score</strong></summary>
 
   Everyone has their own personal reading history, and as we grow up, we are able to comprehend more and more complicated texts. But how do you estimate the level of difficulty of a given text, and how do you teach a computer to do that? In this project, you will find it out: write a program that determines how difficult the text is and for which age it is most suitable.
 </details>
 
 <details>
-  <summary><strong>15. Contacts (Java)</strong></summary>
+  <summary><strong>15. Contacts</strong></summary>
 
   You will learn the essential basics of object-oriented programming: encapsulation, inheritance, and polymorphism. Inheritance will allow you to write code that can perform the same process but for different objects. Polymorphism helps to initiate different processes for different objects by using the same method. You’ll also learn to prevent other users of your code from modifying the variables using encapsulation.
 </details>
 
 <details>
-  <summary><strong>16. Blockchain with Java</strong></summary>
+  <summary><strong>16. Blockchain</strong></summary>
 
   Blockchains are data structures where blocks are inseparably connected. What makes blockchains so special is the security level they offer due to the way they are constructed. Blockchains are unhackable, so it makes perfect sense why cryptocurrency makes use of this technology. In this project, you will try yourself at making a microcosm where virtual miners earn cryptocurrency and exchange messages and transactions using blockchain. As difficult as the project might be, it is bound to pay off: not in cryptocurrency, but in knowledge and skills.
 </details>
@@ -117,31 +117,31 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 
 ## Python Projects
 <details>
-  <summary><strong>1. Coffee Machine Simulator with Java</strong></summary>
+  <summary><strong>1. My First Project</strong></summary>
 
   Imagine that you're the owner of a new small corner shop. You are doing well and want to determine how much you earned in the first month. Create a simple tool that will calculate your net income. Upon completing this project, you can use this tool for your own accounting needs.
 </details>
 
 <details>
-  <summary><strong>2. Coffee Machine (Python)</strong></summary>
+  <summary><strong>2. Coffee Machine</strong></summary>
 
   What can be better than a cup of coffee during a break? A coffee that you don’t have to make yourself. It’s enough to press a couple of buttons on the machine and you get a cup of energy; but first, we should teach the machine how to do it. In this project, you will work on programming a coffee machine simulator. The machine works with typical products: coffee, milk, sugar, and plastic cups; if it runs out of something, it shows a notification. You can get three types of coffee: espresso, cappuccino, and latte. Since nothing’s for free, it also collects the money.
 </details>
 
 <details>
-  <summary><strong>3. Hangman (Python)</strong></summary>
+  <summary><strong>3. Hangman</strong></summary>
 
   Hangman is a popular yet grim puzzle game. A cruel computer hides a word from you, which you try to guess letter by letter. If you fail, you'll be “hanged”. If you win, you'll survive. You’ve probably played the game at least once or twice. Now you can actually create this game yourself!
 </details>
 
 <details>
-  <summary><strong>4. Simple Tic-Tac-Toe with Python</strong></summary>
+  <summary><strong>4. Simple Tic-Tac-Toe</strong></summary>
 
   Everybody remembers this paper-and-pencil game from childhood: Tic-Tac-Toe, also known as Noughts and crosses or Xs and Os. A single mistake usually costs you the game, but thankfully it is simple enough that most players discover the best strategy quickly. Let’s program Tic-Tac-Toe and get playing!
 </details>
 
 <details>
-  <summary><strong>5. Tic-Tac-Toe with AI (Python)</strong></summary>
+  <summary><strong>5. Tic-Tac-Toe with AI</strong></summary>
 
   Everybody remembers this paper-and-pencil game from childhood: Tic-Tac-Toe, also known as Noughts and Crosses or X's and O's. A single mistake usually costs you the game, but thankfully it's simple enough that most players discover the best strategy quickly. Let’s program Tic-Tac-Toe and create an AI opponent to do battle with!
 </details>
@@ -153,13 +153,13 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 </details>
 
 <details>
-  <summary><strong>7. Simple Chat Bot with Python</strong></summary>
+  <summary><strong>7. Simple Chat Bot</strong></summary>
 
   Create a simple console chat bot from scratch that will communicate with you and perform basic arithmetic operations.
 </details>
 
 <details>
-  <summary><strong>8. Zookeeper with Python</strong></summary>
+  <summary><strong>8. Zookeeper</strong></summary>
 
   Learn the very basics of Python coding by building a simple tool for zookeepers. Get to know how to work with variables and lists, put them in while loops and develop a simple console app from scratch.
 </details>
@@ -171,13 +171,13 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 </details>
 
 <details>
-  <summary><strong>10. Regex Engine (Python)</strong></summary>
+  <summary><strong>10. Regex Engine</strong></summary>
 
   Regular expressions are a fundamental part of computer science and natural language processing. In this project, you will write an extendable regex engine that can handle basic regex syntax, including literals (a, b, c, etc.), wild-cards (.), and metacharacters (?, *, +, ^, $).
 </details>
 
 <details>
-  <summary><strong>11. Flashcards (Python)</strong></summary>
+  <summary><strong>11. Flashcards</strong></summary>
 
   When learning a new language, it can be hard to remember all the new vocabulary, which is exactly where flashcards can help. Typically, flashcards show a hint (a task or a picture) on one side and the right answer on the other. Flashcards can be used to remember any sort of data, so if you want to create a useful tool to help your learning and your programming skills, this project is for you.
 </details>
@@ -219,13 +219,13 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 </details>
 
 <details>
-  <summary><strong>18. Last Pencil (Python)</strong></summary>
+  <summary><strong>18. Last Pencil</strong></summary>
 
   Playing with friends is pure fun but getting ahead of them is even more enjoyable. Invite a friend to play the Last Pencil, a game where you decide who wins. In this project, your opponent is a computer that is an expert in the game. But it's up to you to choose who wins.
 </details>
 
 <details>
-  <summary><strong>19. Learning Progress Tracker (Python)</strong></summary>
+  <summary><strong>19. Learning Progress Tracker</strong></summary>
 
   Online learning is gaining popularity. A good education platform can manage registrations, track learning progress, send notifications and newsletters to many users worldwide. It is a huge volume of work indeed. In this project, you will build an application that keeps track of the registered users, their learning progress, and metrics. It will also provide detailed information about each user or any category of users and the overall statistics for the entire learning platform.
 </details>
@@ -246,19 +246,19 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 
 ## JavaScript Projects
 <details>
-  <summary><strong>1. Coffee Machine (JavaScript)</strong></summary>
+  <summary><strong>1. Coffee Machine</strong></summary>
 
   What can be better than a cup of coffee during a break? Two cups. Press a couple of buttons on the machine, and, voilà, a burst of raw energy is in your hands. But first, we should teach the machine how to do it. In this project, you will work on a coffee machine simulator. This machine uses regular ingredients — coffee, milk, and plastic cups. Should it run out of something, it will show you a notification. Our device will serve espresso, cappuccino, and latte. And since nothing is for free, it will also charge coffee lovers for a cup.
 </details>
 
 <details>
-  <summary><strong>2. Simple Chat Bot (JavaScript)</strong></summary>
+  <summary><strong>2. Simple Chat Bot</strong></summary>
 
   Here, at the beginning of your programmer’s path, creating a simple console chat bot will do wonders to guide you through the basics of coding. During this journey you will also play some word and number games that you are going to implement all on your own. Pack up and let’s hit the road, my friend!
 </details>
 
 <details>
-  <summary><strong>3. Zookeeper (JavaScript)</strong></summary>
+  <summary><strong>3. Zookeeper</strong></summary>
 
   This short code challenge can help the local zoo look after its denizens. You will create a tool for monitoring animals and their status.
 </details>
@@ -270,13 +270,13 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 </details>
 
 <details>
-  <summary><strong>5. Hangman (JavaScript)</strong></summary>
+  <summary><strong>5. Hangman</strong></summary>
 
   Hangman is a popular yet grim puzzle game. A cruel computer hides a word from you, which you try to guess letter by letter. If you fail, you'll be “hanged”. If you win, you'll survive. You’ve probably played the game at least once or twice. Now you can actually create this game yourself!
 </details>
 
 <details>
-  <summary><strong>6. Flashcards (Frontend)</strong></summary>
+  <summary><strong>6. Flashcards</strong></summary>
 
   If you are a beginner web developer, you need to know the basics of CSS and HTML. This project is great for those who need somewhere to start. Your goal is to create a stylized page with flashcards, each containing a question on one side and the answer on the other. You can choose any subject you want for your flashcards!
 </details>
@@ -288,7 +288,7 @@ Welcome to the Hyperskill Projects subdirectory of my GitHub repository! Here, y
 </details>
 
 <details>
-  <summary><strong>8. To-Do List (JavaScript)</strong></summary>
+  <summary><strong>8. To-Do List</strong></summary>
 
   Have you ever had the feeling that you're missing something important? If so, to-do lists can be of help. A clear outline of your daily tasks will help you stay composed and mentally focused. In this project, you will create a simple to-do list that can manage your tasks.
 </details>
@@ -321,7 +321,7 @@ Good library management is all about keeping records. In the past, special logbo
 </details>
 
 <details>
-  <summary><strong>4. Simple Banking System (Python)</strong></summary>
+  <summary><strong>4. Simple Banking System</strong></summary>
 
 Everything goes digital these days, and so does money. Today, most people have credit cards, which saves us time and energy and protects us from unnecessary stress. Cards make our lives easier in so many ways  to carry a wallet full of cash to providing consumer protection. In this project, you will develop a simple banking system with a database.
 </details>
@@ -329,13 +329,13 @@ Everything goes digital these days, and so does money. Today, most people have c
 
 ## Go Projects
 <details>
-  <summary><strong>1. Coffee Machine (Go)</strong></summary>
+  <summary><strong>1. Coffee Machine</strong></summary>
 
 What can be better than a cup of coffee during a break? Two cups. Press a couple of buttons on the machine, and, voilà, a burst of raw energy is in your hands. But first, we should teach the machine how to do it. In this project, you will work on a coffee machine simulator. This machine uses regular ingredients — coffee, milk, and plastic cups. Should it run out of something, it will show you a notification. Our device will serve espresso, cappuccino, and latte. And since nothing is for free, it will also charge coffee lovers for a cup.
 </details>
 
 <details>
-  <summary><strong>2. Simple Chat Bot (Go)</strong></summary>
+  <summary><strong>2. Simple Chat Bot</strong></summary>
 
 Here, at the beginning of your programmer’s path, creating a simple console chat bot will do wonders to guide you through the basics of coding. During this journey you will also play some word and number games that you are going to implement all on your own. Pack up and let’s hit the road, my friend!
 </details>
@@ -347,13 +347,13 @@ Today, many popular platforms on the Internet use artificial intelligence to fil
 </details>
 
 <details>
-  <summary><strong>4. Cinema Room Manager (Go)</strong></summary>
+  <summary><strong>4. Cinema Room Manager</strong></summary>
 
 Cinema has been a part of the entertainment industry for a long time: a good movie is a way to escape reality and live through a variety of emotions. The best cinema experience you can get is probably in a cinema theatre. In this project, you will create an application that helps manage a cinema theatre: sell tickets, check available seats, see sales statistics, and more.
 </details>
 
 <details>
-  <summary><strong>5. Flashcards (Go)</strong></summary>
+  <summary><strong>5. Flashcards</strong></summary>
 
 When learning a new language, it can be hard to remember all the new vocabulary, which is exactly where flashcards can help. Typically, flashcards show a hint (a task or a picture) on one side and the right answer on the other. Flashcards can be used to remember any sort of data, so if you want to create a useful tool to help your learning and your programming skills, this project is for you.
 </details>
