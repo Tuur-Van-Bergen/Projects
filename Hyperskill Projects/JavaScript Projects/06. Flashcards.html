@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        h1 {
+            text-align: center;
+            align-items: center;
+            padding-top: 30px;
+            font-family: "Agency FB", serif;
+        }
+
+        .page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-gap: 10px;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 20px;
+        }
+
+        /* Style for the card */
+        .card {
+            width: 4cm;
+            height: 4cm;
+            position: relative;
+        }
+
+        /* Style for the card content */
+        .card-content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            font-family: "Agency FB", serif;
+            font-size: 20px;
+            font-weight: bold;
+            color: darkslateblue;
+            position: absolute;
+            backface-visibility: hidden; /* Hide the back of the card */
+            transition: transform 0.5s ease-in-out; /* Add a smooth transition */
+        }
+
+        .card:hover .card-content.front {
+            transform: rotateY(180deg);
+        }
+
+        .card:hover .card-content.back {
+            transform: rotateY(0deg);
+        }
+
+        /* Style for the front and back faces of the card */
+        .front {
+            background-color: lightseagreen;
+            transform: rotateY(0deg);
+        }
+
+        .back {
+            background-color: darkblue;
+            color: white;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+<h1>What is the capital of...</h1>
+<div class="page">
+    <div class="grid-container">
+        <div class="grid-item">
+            <div class="card">
+                <div class="card-content front"><p>Mexico</p></div>
+                <div class="card-content back"><p>Mexico City</p></div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <div class="card-content front"><p>South Korea</p></div>
+                <div class="card-content back"><p>Seoul</p></div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <div class="card-content front"><p>Sweden</p></div>
+                <div class="card-content back"><p>Stockholm</p></div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <div class="card-content front"><p>Georgia</p></div>
+                <div class="card-content back"><p>Tbilisi</p></div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <div class="card-content front"><p>Honduras</p></div>
+                <div class="card-content back"><p>Tegucigalpa</p></div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <div class="card-content front"><p>Tunisia</p></div>
+                <div class="card-content back"><p>Tunis</p></div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <div class="card-content front"><p>Austria</p></div>
+                <div class="card-content back"><p>Vienna</p></div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <div class="card-content front"><p>Papua New Guinea</p></div>
+                <div class="card-content back"><p>Port Moresby</p></div>
+            </div>
+        </div>
+        <div class="grid-item">
+            <div class="card">
+                <div class="card-content front"><p>Iceland</p></div>
+                <div class="card-content back"><p>Reykjavik</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
