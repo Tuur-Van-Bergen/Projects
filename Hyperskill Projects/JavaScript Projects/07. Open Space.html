@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Space</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .space {
+            background-image: url("../../../space.png");
+            width: 80vw;
+            margin: 0 10vw;
+            height: 100vh;
+        }
+
+        .planet-area {
+            position: fixed;
+            left: 10vw;
+            bottom: 0;
+            width: 35vw;
+            height: 80vh;
+        }
+
+        .rocket {
+            position: fixed;
+            width: 150px;
+            left: 27.5%;
+            top: 57%;
+            transform: rotate(15deg);
+            transition: transform 2s linear; /* Smooth transition for launch */
+        }
+
+        .rocket-launched {
+            transform: translateY(-100vh) rotate(15deg); /* Launch transformation */
+        }
+
+        .planet {
+            position: fixed;
+            width: 35%;
+            left: 10vw;
+            bottom: -20vh;
+        }
+
+        .control-panel__inner {
+            background-color: red;
+            margin: 2.5vh 1.5vw;
+        }
+
+        input[title="ok"] {
+            margin-left: 3em;
+        }
+
+        input[title="Launch"] {
+            margin: -1em 45% auto 45%;
+        }
+
+        input[type="password"] {
+            padding: 1em;
+            color: aqua;
+            border: 1px solid white;
+        }
+
+        input[type="button"] {
+            padding: 1em;
+            background-color: aqua;
+            border-radius: 10px;
+        }
+
+        .check-buttons {
+            display:flex;
+            flex-direction: row;
+            width: 95%;
+            height: 5vh;
+            margin: auto;
+        }
+
+        .check-buttons input[type="checkbox"] {
+            margin: auto;
+        }
+
+        .levers {
+            display: flex;
+            flex-direction: row;
+            width: 95%;
+            margin: auto;
+        }
+
+        .levers input[type="range"] {
+            transform: rotate(-90deg); /* Rotate each range input 90 degrees counter-clockwise */
+            transform-origin: 50% 50%; /* Rotate around the center of the input */
+            margin: 40px auto; /* Adjust margin as needed */
+            height: 40px;
+            width: 19%;
+        }
+
+        .control-panel {
+            background: linear-gradient(135deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
+                    linear-gradient(225deg, #708090 21px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
+            background-color:#708090;
+            background-size: 64px 128px;
+            position: fixed;
+            right: 12.5vw;
+            top: 37.5vh;
+            width: 35vw;
+            height: auto;
+            max-height: 35vh;
+        }
+
+
+    </style>
+    <script>
+        function unlockInputs() {
+            const enteredPassword = document.getElementById("password");
+            if (enteredPassword.value === "TrustNo1") {
+                let elements = document.getElementsByClassName("protected");
+                for (let i= 0; i < elements.length; i++) {
+                    elements[i].disabled = false;
+                }
+                document.getElementById("password").disabled = true;
+                document.getElementById("ok").disabled = true;
+            }
+        }
+
+        function unlockLaunch() {
+            let ranges = document.getElementsByClassName("range");
+            for (let i = 0; i < ranges.length; i++) {
+                if (ranges[i].value !== ranges[i].max) {
+                    document.getElementById("Launch").disabled = true;
+                    return;
+                }
+            }
+            let checkboxes = document.getElementsByClassName("checkbox");
+            for (let i = 0; i < checkboxes.length; i++) {
+                if (!checkboxes[i].checked) {
+                    document.getElementById("Launch").disabled = true;
+                    return;
+                }
+            }
+            document.getElementById("Launch").disabled = false;
+        }
+
+        function launch() {
+            // Get the rocket element
+            const rocket = document.getElementById('rocket');
+
+            // Add the class for launch
+            rocket.classList.add('rocket-launched');
+
+            // Reset the rocket position after the launch animation
+            setTimeout(() => {
+                rocket.classList.remove('rocket-launched');
+            }, 2000); // Adjust the duration based on your animation time
+        }
+
+    </script>
+</head>
+<body>
+    <div class="space">
+        <div class="planet-area">
+            <img id="rocket" class="rocket" src="../../../rocket.png" alt="rocket">
+            <img class="planet" src="../../../mars.png" alt="mars">
+        </div>
+        <div class="control-panel">
+            <div class="control-panel__inner">
+                <input id="password" type="password" /> <input id="ok" type="button" title="ok" value="Ok" onclick="unlockInputs()">
+                <div class="check-buttons">
+                    <input class="protected checkbox" type="checkbox" onchange="unlockLaunch()" disabled/>
+                    <input class="protected checkbox" type="checkbox" onchange="unlockLaunch()" disabled/>
+                    <input class="protected checkbox" type="checkbox" onchange="unlockLaunch()" disabled/>
+                    <input class="protected checkbox" type="checkbox" onchange="unlockLaunch()" disabled/>
+                    <input class="protected checkbox" type="checkbox" onchange="unlockLaunch()" disabled/>
+                    <input class="protected checkbox" type="checkbox" onchange="unlockLaunch()" disabled/>
+                </div>
+                <div class="levers">
+                    <input class="protected range" type="range" max="100" onchange="unlockLaunch()" disabled/>
+                    <input class="protected range" type="range" max="100" onchange="unlockLaunch()" disabled/>
+                    <input class="protected range" type="range" max="100" onchange="unlockLaunch()" disabled/>
+                    <input class="protected range" type="range" max="100" onchange="unlockLaunch()" disabled/>
+                    <input class="protected range" type="range" max="100" onchange="unlockLaunch()" disabled/>
+                </div>
+                <input id="Launch" class="Launch" type="button" title="Launch" value="Launch" onchange="launch()"disabled>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
