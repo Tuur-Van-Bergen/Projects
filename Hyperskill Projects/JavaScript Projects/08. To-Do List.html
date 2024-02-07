@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+</head>
+<body>
+    <input id="input-task" type="text">
+    <button id="add-task-button" onclick="addTask()">Add task</button>
+    <ul id="task-list"></ul>
+    <script>
+        function loadTasks() {
+            let taskList = document.getElementById("task-list");
+            let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+            tasks.forEach(task => {
+                let liElement = document.createElement("li");
+                let inputElement = document.createElement("input");
+                inputElement.type = 'checkbox';
+                inputElement.checked = task.checked || false;
+
+                let spanElement = document.createElement("span");
+                spanElement.className = "task";
+                spanElement.innerHTML = task.value;
+
+                let buttonElement = document.createElement("button");
+                buttonElement.className = "delete-btn";
+                buttonElement.innerHTML = "Delete";
+                buttonElement.addEventListener("click", function() {
+                    deleteTask(this);
+                });
+
+                liElement.append(inputElement);
+                liElement.append(spanElement);
+                liElement.append(buttonElement);
+                taskList.append(liElement);
+            });
+        }
+
+        function saveTasks() {
+            let taskList = document.getElementById("task-list");
+            let tasks = [];
+
+            Array.from(taskList.children).forEach(liElement => {
+                let task = {
+                    value: liElement.querySelector('.task').innerHTML,
+                    checked: liElement.querySelector('input[type="checkbox"]').checked
+                };
+                tasks.push(task);
+            });
+
+            localStorage.setItem("tasks", JSON.stringify(tasks));
+        }
+
+        function addTask() {
+            let list = document.getElementById("task-list");
+            let input = document.getElementById("input-task");
+            let value = input.value;
+            input.value = "";
+            let liElement = document.createElement("li");
+            let inputElement = document.createElement("input");
+            inputElement.type = 'checkbox';
+            inputElement.onchange = function () {
+                checkBoxTask(this);
+            };
+            let spanElement = document.createElement("span");
+            spanElement.className = "task";
+            spanElement.innerHTML = value;
+            let buttonElement = document.createElement("button");
+            buttonElement.className = "delete-btn";
+            buttonElement.innerHTML = "Delete";
+            buttonElement.onclick = function () {
+                deleteTask(this);
+            };
+            liElement.append(inputElement);
+            liElement.append(spanElement);
+            liElement.append(buttonElement);
+            list.append(liElement);
+            saveTasks();
+        }
+
+        function deleteTask(button) {
+            let li = button.parentElement;
+            li.remove();
+            saveTasks();
+        }
+
+        function checkBoxTask(input) {
+            let li = input.parentElement;
+            let span = li.children[1];
+            if (input.checked) {
+                span.style.textDecoration = "line-through";
+            } else {
+                span.style.textDecoration = "none";
+            }
+            saveTasks()
+        }
+        loadTasks();
+    </script>
+</body>
+</html>
