@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello, World!</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <button onclick="toggleContent()">Accessibility</button>
+            <div id="content-container"></div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Website for the visually impaired</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quidem?</p>
+            <img src="#" alt="a" />
+        </section>
+        <section>
+            <h2>This page is designed for the visually impaired</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, placeat.</p>
+            <img src="#" alt="b" />
+        </section>
+    </main>
+    <footer>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, impedit?</h3>
+        <a href="#">Top</a>
+    </footer>
+    <script>
+        let contentVisible = false;
+        let imagesVisible = true;
+
+        function toggleContent() {
+            let container = document.getElementById('content-container');
+
+            if (contentVisible) {
+                // If content is visible, remove it
+                container.innerHTML = '';
+            } else {
+                // If content is not visible, create and append it
+                container.innerHTML = `
+                    <span id="span-text" class="content">Change text size
+                        <label for="small-text">Small</label>
+                        <input type="radio" id="small-text" name="font-size" value="small" onchange="changeFontSize('small')">
+
+                        <label for="medium-text">Medium</label>
+                        <input type="radio" id="medium-text" name="font-size" value="medium" onchange="changeFontSize('medium')">
+
+                        <label for="large-text">Large</label>
+                        <input type="radio" id="large-text" name="font-size" value="large" onchange="changeFontSize('large')">
+
+                        <label for="larger-text">Larger</label>
+                        <input type="radio" id="larger-text" name="font-size" value="larger" onchange="changeFontSize('larger')">
+                    </span>
+                    <br>
+                    <span id="span-color" class="content">Change colors
+                        <label for="white-theme">White</label>
+                        <input type="radio" id="white-theme" name="color" value="white" onchange="bgcChanger('white')">
+
+                        <label for="yellow-theme">Yellow</label>
+                        <input type="radio" id="yellow-theme" name="color" value="yellow" onchange="bgcChanger('yellow')">
+
+                        <label for="blue-theme">Blue</label>
+                        <input type="radio" id="blue-theme" name="color" value="blue" onchange="bgcChanger('blue')">
+                    </span>
+                    <br>
+                    <button id="button-hide-images" class="content" onclick="hideImages()">Hide images</button>
+                `;
+            }
+
+            // Toggle the flag
+            contentVisible = !contentVisible;
+        }
+
+        function changeFontSize(size) {
+            const htmlElement = document.querySelector('html');
+            if (size === 'small') {
+                htmlElement.style.fontSize = '16px';
+            } else if (size === 'medium') {
+                htmlElement.style.fontSize = '24px';
+            } else if (size === 'large') {
+                htmlElement.style.fontSize = '29px';
+            } else if (size === 'larger') {
+                htmlElement.style.fontSize = '32px';
+            }
+        }
+
+        function bgcChanger(color) {
+            const htmlElement = document.querySelector('html');
+            if (color === 'white') {
+                htmlElement.style.backgroundColor = '#fff';
+                htmlElement.style.color = '#000';
+            } else if (color === 'yellow') {
+                htmlElement.style.backgroundColor = '#f5d328';
+                htmlElement.style.color = '#000';
+            } else if (color === 'blue') {
+                htmlElement.style.backgroundColor = '#002452';
+                htmlElement.style.color = '#fff';
+            }
+        }
+
+        function hideImages() {
+            let images = document.querySelectorAll('img');
+            for (var i = 0; i < images.length; i++) {
+                if (imagesVisible) {
+                    images[i].style.visibility = "hidden";
+                    const altText = images[i].alt;
+                    const altSpan = document.createElement('span');
+                    altSpan.textContent = altText;
+                    images[i].parentNode.insertBefore(altSpan, images[i].nextSibling);
+                    images[i].src = '#'
+                } else {
+                    images[i].style.visibility = "visible";
+                    const altSpan = images[i].nextSibling;
+                    if (altSpan && altSpan.nodeName === 'SPAN') {
+                        altSpan.parentNode.removeChild(altSpan);
+                    }
+                    images[i].src = 'a'
+                }
+            }
+            imagesVisible = !imagesVisible;
+        }
+    </script>
+</body>
+
+</html>
